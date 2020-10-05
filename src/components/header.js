@@ -1,42 +1,39 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React, { useState } from "react"
+import { Link } from 'gatsby'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+const Header = () => {
+
+  const [menuActivo, setMenuActivo] = useState(false);
+
+  return (
+    <header className="header">
+      <div className="contenedor-header">
+        <Link to="/">
+          <h1>JM</h1>
         </Link>
-      </h1>
-    </div>
-  </header>
-)
+        <button
+          onClick={() => setMenuActivo(!menuActivo)}
+          className="menu-header-boton"
+          name="boton-menu"
+        >
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </button>
+        <div className="enlaces-header">
+          <Link activeClassName="enlace-activo" className="enlace" to="/">Inicio</Link>
+          <Link className="enlace" to="/acerca">Acerca de mi</Link>
+          <Link className="enlace" to="/portafolio">Portafolio</Link>
+        </div>
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
+      </div>
+      <div className={menuActivo ? "menu-enlaces activo" : "menu-enlaces"}>
+        <Link className="enlace" to="/">Inicio</Link>
+        <Link className="enlace" to="/acerca">Acerca de mi</Link>
+        <Link className="enlace" to="/portafolio">Portafolio</Link>
+      </div>
+    </header>
+  )
 }
 
 export default Header
