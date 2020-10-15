@@ -20,11 +20,13 @@ const IndexPage = () => {
             </button>
           </Link>
         </div>
+      </main>
 
+      <div className="contenedor-principal">
         <hr className="linea-recta" />
 
         <div className="contenedor-portafolio">
-          <h1>Portafolio</h1>
+          <h2>Portafolio</h2>
           <div className="proyecto">
             <Image
               className="imagen"
@@ -50,7 +52,7 @@ const IndexPage = () => {
         <hr className="linea-recta" />
 
         <div className="contenedor-contacto">
-          <h1>Contacto</h1>
+          <h2>Contacto</h2>
           <div className="contacto-enlaces">
             <div className="contacto-enlace">
               <i className="fab fa-linkedin-in"></i>
@@ -70,7 +72,20 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-      </main>
+
+        <hr className="linea-recta" />
+
+        <div className="contenedor-acerca">
+          <h2>Acerca de mi portafolio web</h2>
+          <p className="descripcion">El sitio web esta desarrollado con GatsbyJS y Strapi</p>
+
+          <button className="boton-conocer">
+            <a href="https://github.com/DecoyTNT/portafolio">
+              Ver Código
+            </a>
+          </button>
+        </div>
+      </div>
     </Layout>
   )
 }
