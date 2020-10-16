@@ -20,16 +20,14 @@ const IndexPage = () => {
             </button>
           </Link>
         </div>
-      </main>
 
-      <div className="contenedor-principal">
         <hr className="linea-recta" />
 
         <div className="contenedor-portafolio">
           <h2>Portafolio</h2>
           <div className="proyecto">
             <Image
-              className="imagen"
+              className="proyecto-img"
               fluid={proyectos[5].imagen.sharp.fluid}
             />
             <h3>{proyectos[5].nombre}</h3>
@@ -85,7 +83,7 @@ const IndexPage = () => {
             </a>
           </button>
         </div>
-      </div>
+      </main>
     </Layout>
   )
 }

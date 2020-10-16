@@ -20,7 +20,7 @@ const Acerca = () => {
                 <hr className="linea-recta" />
 
                 <div className="contenedor-acerca">
-                    <h1>Experiencia</h1>
+                    <h2>Experiencia</h2>
                     <p>Desarrolle el backend de un sistema de auditorías para mi universidad, el cual actualmente se encuentra en uso, este proyecto tomo un año desarrollarlo, ya que se empezó sacando todos los requisitos, después se seleccionaron las tecnologías a usar, las cuales fueron en la parte de frontend Angular, en el backend NodeJS y como base de datos MongoDB</p>
                     <p>Imagenes del sistema</p>
                     <div className="imagenes-sasgi">
@@ -41,7 +41,7 @@ const Acerca = () => {
                 <hr className="linea-recta" />
 
                 <div className="contenedor-contacto">
-                    <h1>Contacto</h1>
+                    <h2>Contacto</h2>
                     <div className="contacto-enlaces">
                         <div className="contacto-enlace">
                             <i className="fab fa-linkedin-in"></i>
@@ -65,8 +65,10 @@ const Acerca = () => {
 
                 <hr className="linea-recta" />
 
+                <h2>Habilidades</h2>
+
                 <div className="contenedor-habilidades">
-                    <h1>Habilidades</h1>
+
                     <div className="habilidades">
                         <p>Logica de programación</p>
                         <span className="barra-habilidad">
@@ -93,10 +95,12 @@ const Acerca = () => {
 
                 <hr className="linea-recta" />
 
+                <h2>Tecnologías</h2>
+
                 <div className="contenedor-habilidades">
-                    <h1>Tecnologías</h1>
-                    <h2>Lenguajes de programación</h2>
+
                     <div className="habilidades">
+                        <h2>Lenguajes de programación y gestores de BD</h2>
                         <p>Java</p>
                         <span className="barra-habilidad">
                             <span className="barra-70"></span>
@@ -113,9 +117,24 @@ const Acerca = () => {
                         <span className="barra-habilidad">
                             <span className="barra-70"></span>
                         </span>
+                        {/* </div>
+
+                    <div className="habilidades"> */}
+
+                        <p>MySQL</p>
+                        <span className="barra-habilidad">
+                            <span className="barra-70"></span>
+                        </span>
+                        <p>MongoDB</p>
+                        <span className="barra-habilidad">
+                            <span className="barra-70"></span>
+                        </span>
                     </div>
-                    <h2>Frameworks, librerías, entornos de ejecución</h2>
+
                     <div className="habilidades">
+
+                        <h2>Frameworks, librerías, entornos de ejecución</h2>
+
                         <p>ReactJS</p>
                         <span className="barra-habilidad">
                             <span className="barra-80"></span>
@@ -157,17 +176,7 @@ const Acerca = () => {
                             <span className="barra-60"></span>
                         </span>
                     </div>
-                    <h2>Gestores de base de datos</h2>
-                    <div className="habilidades">
-                        <p>MySQL</p>
-                        <span className="barra-habilidad">
-                            <span className="barra-70"></span>
-                        </span>
-                        <p>MongoDB</p>
-                        <span className="barra-habilidad">
-                            <span className="barra-70"></span>
-                        </span>
-                    </div>
+
                 </div>
             </main>
         </Layout>
